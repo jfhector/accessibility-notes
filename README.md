@@ -1,4 +1,4 @@
 # accessibility-notes
 My personal notes as I'm studying accessibility
 
-[Start here: index.html](./index.html).
+[View the notes here](https://jfhector.github.io/accessibility-notes/).
