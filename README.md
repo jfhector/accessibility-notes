@@ -1,5 +1,5 @@
 # a11y-notes
-Personal web accessibility study notes and cheat sheets.
+Web accessibility study notes and cheat sheets.
 
 ## HTML
 
