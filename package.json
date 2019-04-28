@@ -1,0 +1,22 @@
+{
+  "name": "accessibility-notes",
+  "version": "0.0.1",
+  "description": "Web accessibility study notes and cheat sheets.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfhector/accessibility-notes.git"
+  },
+  "author": "Jean-Francois Hector",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfhector/accessibility-notes/issues"
+  },
+  "homepage": "https://github.com/jfhector/accessibility-notes#readme",
+  "devDependencies": {
+    "ajv": "^6.10.0"
+  }
+}
