@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-GB"></html>
+<head>
+    <title>Indicating language – Accessibility notes</title>
+    <link href="../../styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>        
+        <h1>Indicating language</h1>
+    
+        <h2>Rules</h2>
+    
+        <ul>
+            <li>The main language of the page <strong>must</strong> be specified.</li>
+            <li>Changes to language within the html page <strong>must</strong> be indicated.</li>
+        </ul>
+    
+        <br/>
+        <h2>Rationale</h2>
+    
+        <p>Assistive technologies such as screen readers have support for different languages, allowing for appropriate pronounciation.</p>
+    
+        <br/>
+        <h2>Techniques</h2>
+    
+        <figure>
+            <figcaption><h3>Good code example</h3></figcaption>
+            <script src="https://gist.github.com/jfhector/f89dc1e576e9756f31ed116950b92359.js"></script>
+        </figure>
+    
+        <figure>
+            <figcaption><h3>Failure code example</h3></figcaption>
+            <script src="https://gist.github.com/jfhector/b09759ebcd3484856ed6590ba9c3e134.js"></script>
+        </figure>
+    
+        <br/>
+        <h2>Tests</h2>
+
+        <table class="tests-table" aria-label="Testing procedures">
+            <thead>
+                <tr>
+                    <th>Procedure</th>
+                    <th>Expected result</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Search source for <code>&lt;html&gt; element</code>
+                    </td>
+                    <td><code>&lt;html&gt;</code> element must have a <code>lang</code> attribute with a value equal to the language code for the main page content language.</td>
+                    <td>Manual</td>
+                </tr>
+                <tr>
+                    <td>Validate the page against the <a href="http://validator.w3.org/i18n-checker/">W3C internationalisation checker</a>.</td>
+                    <td>There must not be a 'The html tag has no language attribute' warning. And the Language HTML tag value should match the language code for the main page content language.</td>
+                    <td>Tool</td>
+                </tr>
+                <tr>
+                    <td>Search source for each instance of a language change</td>
+                    <td>Each instance should have a containing element with a <code>lang</code> attribute with a value equal to the language code for the language.</td>
+                    <td>Manual</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <br/>
+    <footer role="contentinfo">
+        <h2>Sources</h2>
+        <ul>
+            <li><a href="http://www.bbc.co.uk/guidelines/futuremedia/accessibility/html/language.shtml">BBC HTML Accessibility Standards v2.0</a></li>
+        </ul>
+    </footer>
+</body>

@@ -1,0 +1,23 @@
+body {
+    font-size: 1.125rem;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    max-width: 120ch;
+}
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+h2 {
+    border-bottom: 1px solid black;
+}
+p, li {
+    max-width: 80ch;
+}
+
+table.tests-table > thead > tr,
+table.tests-table > tbody > tr:not(:last-child) {
+    border-bottom: 1px solid black;
+}

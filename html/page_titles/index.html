@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Page titles – Accessibility notes</title>
+    <link href="../../styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Page titles</h1>
+    
+        <h2>Rules</h2>
+        <ul>
+            <li>Documents <strong>must</strong> have a page <code>&lt;title&gt;</code> that identify their main content.</li>
+        </ul>
+    
+        <br/>
+        <h2>Rationale</h2>
+
+        <p>Document titles help users orientate themselves within web sites and apps. The document <code>&lt;title&gt;</code> element content is often the first thing that a speech output user will hear. It acts as a confirmation of what page they have arrived at. Document titles commonly have the same content as the page's <code>&lt;h1&gt;</code> element.</p>
+
+        <br/>
+        <h2>
+            Techniques
+        </h2>
+    
+        <figure>
+            <figcaption><h3>Good code example</h3></figcaption>
+            <pre><code>
+                &lt;title&gt;BBC Weather&lt;/&gt;
+            </code></pre>
+        </figure>
+    
+        <figure>
+            <figcaption><h3>Bad code example</h3></figcaption>
+            <pre><code>
+                    &lt;title&gt;BBC&lt;/&gt;
+                </code></pre>
+        </figure>
+    
+        <br/>
+        <h2>Tests</h2>
+    
+        <table class="tests-table" aria-label="Testing procedures">
+            <thead>
+                <tr>
+                    <td>Procedure</td>
+                    <td>Expected result</td>
+                    <td>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Examine the title text of each document by viewing the document source code and searching for the <code>&lt;title&gt;</code> element.</td>
+                    <td>The document title should describe the primary title of the document.</td>
+                    <td>Manual</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer role="contentinfo">
+        <h2>
+            Sources
+        </h2>
+
+        <ul>
+            <li>
+                <a href="http://www.bbc.co.uk/guidelines/futuremedia/accessibility/html/page-titles.shtml">BBC HTML Accessibility standards 2.0</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

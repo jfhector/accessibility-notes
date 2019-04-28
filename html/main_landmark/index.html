@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Main landmark – Accessibility notes</title>
+    <link href="../../styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Main landmark</h1>
+    
+        <h2>Rules</h2>
+        <ul>
+            <li>A page <strong>must</strong> have exactly one <code>&lt;main&gt;</code> element, or element with <code>role="main"</code>.</li>
+        </ul>
+
+        <br/>
+        <h2>Rationale</h2>
+
+        <p>The WAI-ARIA <code>main</code> role help users of assistive technologies such as screen readers to skip directly to the main content of the page, bypassing navigation and other contents that might be before it.</p>
+        <p>Note: the WAI-ARIA <code>main</code> role is also implied by the <code>&lt;main&gt;</code> element.</p>
+        
+    
+        <br/>
+        <h2>
+            Techniques
+        </h2>
+    
+        <figure>
+            <figcaption><h3>Good code example</h3></figcaption>
+            <pre><code>
+                &lt;div role="main" id="main-content"&gt;&lt;/div&gt;
+            </code></pre>
+        </figure>
+    
+        <figure>
+            <figcaption><h3>Bad code example</h3></figcaption>
+            <pre><code>
+                &lt;div role="main" id="main-content"&gt;&lt;/div&gt;
+                ...
+                &lt;main&gt;...&lt;/main&gt;
+            </code></pre>
+        </figure>
+    
+        <br/>
+        <h2>Tests</h2>
+    
+        <table class="tests-table" aria-label="Testing procedures">
+            <thead>
+                <tr>
+                    <td>Procedure</td>
+                    <td>Expected result</td>
+                    <td>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Search source for <code>role="main"</code> and <code>&lt;main&gt;</code>.</td>
+                    <td>There should be exactly one instance of <code>&lt;main&gt;</code> or <code>role="main"</code>.</td>
+                    <td>Manual</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer role="contentinfo">
+        <h2>
+            Sources
+        </h2>
+
+        <ul>
+            <li>
+                <a href="http://www.bbc.co.uk/guidelines/futuremedia/accessibility/html/main-landmark.shtml">BBC HTML Accessibility standards 2.0</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
