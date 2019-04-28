@@ -1,4 +1,4 @@
-# a11y-notes
+# accessibility-notes
 Web accessibility study notes and cheat sheets.
 
 ## HTML
