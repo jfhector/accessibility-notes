@@ -72,7 +72,7 @@
 
 Type | Procedure | Expected result
 --- | --- | ---
-Tool-assisted | Use WAVE Toolbar or similar to generate an outline of the html document. | There must be exactly one `<h1>`. The headings in the page's source order must form an increasing sequence. No heading levels should be skipped `<h1>`.
+Tool | Use WAVE Toolbar or similar to generate an outline of the html document. | There must be exactly one `<h1>`. The headings in the page's source order must form an increasing sequence. No heading levels should be skipped `<h1>`.
 Manual | Search document source for `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` and `<h6>`. | There must be exactly one instance of `<h1>`. Each heading should be followed either by content, or by another heading of one level deeper.
 
 ## References
