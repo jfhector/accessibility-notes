@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jfhector/accessibility-notes#readme",
   "devDependencies": {
+    "@types/node": "^11.13.8",
     "ajv": "^6.10.0"
   }
 }
