@@ -1,4 +1,4 @@
 # accessibility-notes
-My personal notes as I'm studying accessibility
+Web accessibility study notes and cheat sheets.
 
 [View the notes here](https://jfhector.github.io/accessibility-notes/).
