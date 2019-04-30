@@ -1,6 +1,10 @@
 body {
     font-size: 1.125rem;
 }
+section {
+    max-width: 120ch;
+    margin-bottom: 2rem;
+}
 table {
     table-layout: fixed;
     border-collapse: collapse;
@@ -15,6 +19,7 @@ h2 {
 }
 p, li {
     max-width: 80ch;
+    margin-bottom: 1rem;
 }
 
 table.tests-table > thead > tr,

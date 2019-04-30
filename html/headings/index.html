@@ -8,75 +8,80 @@
     <main>
         <h1>Headings</h1>
     
-        <h2>Rules</h2>
-        <ul>
-            <li>A document <strong>must</strong> have exactly one <code>&lt;h1&gt;</code> element.</li>
-            <li>Headings <strong>must</strong> form an increasing sequence. In this sequence, heading levels <strong>should</strong> not be skipped.</li>
-            <li>Heading elements <strong>must</strong> be followed by either content or another heading of one level deeper.</li>
-        </ul>
-    
-        <br/>
-        <h2>Rationale</h2>
-        <ul>
-            <li>A logical heading structure is invaluable for users of screen readers and similar assistive technologies to help navigate content.</li>
-            <li>Users' should be able to use the document's <code>&lt;h1&gt;</code> to identify it's main content. Documents should have one main subject.</li>
-            <li>
-                Heading levels should not be skipped, because a predictable document outline is important for understandibility:
-                <ul>
-                    <li>
-                            A heading of level n+1 indicates a sub section of a heading of level n. (E.g. <code>&lt;h2&gt;</code> followed by <code>&lt;h3&gt;</code>). This enables people who use screen readers to have a clear and correct mental model of the content and structure of the page.
-                    </li>
-                    <li>
-                            However, if one or several heading levels are skipped (e.g. <code>&lt;h2&gt;</code> followed by <code>&lt;h4&gt;</code>), it is not clear whether the content under <code>&lt;h4&gt;</code> is a sub-section of the section headed by <code>&lt;h2&gt;</code>.
-                    </l1>
-                </ul>
-            </li>
-        </ul>
+        <section>
+            <h2>Rules</h2>
+            <ul>
+                <li>A document <strong>must</strong> have exactly one <code>&lt;h1&gt;</code> element.</li>
+                <li>Headings <strong>must</strong> form an increasing sequence. In this sequence, heading levels <strong>should</strong> not be skipped.</li>
+                <li>Heading elements <strong>must</strong> be followed by either content or another heading of one level deeper.</li>
+            </ul>
+        </section>
 
-        <br/>
-        <h2>
-            Techniques
-        </h2>
-    
-        <figure>
-            <figcaption><h3>Good code example</h3></figcaption>
-            <script src="https://gist.github.com/jfhector/3845a07ed7cc69442203aa73b12b37b3.js"></script>
-        </figure>
-    
-        <figure>
-            <figcaption><h3>Failure code example: Heading level sequence that is not increasing</h3></figcaption>
-            <script src="https://gist.github.com/jfhector/92e112ef753384d65571bb514c9ddcc1.js"></script>
-        </figure>
-    
-        <figure>
-            <figcaption><h3>Failure code example: Heading level sequence that skips levels</h3></figcaption>
-            <script src="https://gist.github.com/jfhector/db95e099012563e010821e43bb4fbd8a.js"></script>
-        </figure>
+        <section>
+            <h2>Rationale</h2>
+            <ul>
+                <li>A logical heading structure is invaluable for users of screen readers and similar assistive technologies to help navigate content.</li>
+                <li>Users' should be able to use the document's <code>&lt;h1&gt;</code> to identify it's main content. Documents should have one main subject.</li>
+                <li>
+                    Heading levels should not be skipped, because a predictable document outline is important for understandibility:
+                    <ul>
+                        <li>
+                                A heading of level n+1 indicates a sub section of a heading of level n. E.g. If we find a headling of level 3 underneath a heading of level 2, it indicates that this is a sub-section of a section of a web page.
+                        </li>
+                        <li>
+                                However, if one or several heading levels are skipped (e.g. <code>&lt;h2&gt;</code> followed by <code>&lt;h4&gt;</code>), it is not clear whether the content under <code>&lt;h4&gt;</code> is a sub-section of the section headed by <code>&lt;h2&gt;</code>.
+                        </l1>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-        <br/>
-        <h2>Tests</h2>
-    
-        <table class="tests-table" aria-label="Test procedures and expected results">
-            <thead>
-                <tr>
-                    <td>Type</td>
-                    <td>Procedure</td>
-                    <td>Expected result</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Tool</td>
-                    <td>Use WAVE Toolbar or similar to generate an outline of the html document.</td>
-                    <td>There must be exactly one <code>&lt;h1&gt;</code>. The headings in the page's source order must form an increasing sequence. No heading levels should be skipped after <code>&lt;h1&gt;</code>.</td>
-                </tr>
-                <tr>
-                    <td>Manual</td>
-                    <td>Search document source for <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code>.</td>
-                    <td>There must be exactly one instance of <code>&lt;h1&gt;</code>. Each heading should be followed by either by content, or by another heading of one level deeper.</td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <h2>
+                Techniques
+            </h2>
+        
+            <figure>
+                <figcaption><h3>Good code example</h3></figcaption>
+                <script src="https://gist.github.com/jfhector/3845a07ed7cc69442203aa73b12b37b3.js"></script>
+            </figure>
+        
+            <figure>
+                <figcaption><h3>Failure code example: Heading level sequence that is not increasing</h3></figcaption>
+                <script src="https://gist.github.com/jfhector/92e112ef753384d65571bb514c9ddcc1.js"></script>
+            </figure>
+        
+            <figure>
+                <figcaption><h3>Failure code example: Heading level sequence that skips levels</h3></figcaption>
+                <script src="https://gist.github.com/jfhector/db95e099012563e010821e43bb4fbd8a.js"></script>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Tests</h2>
+        
+            <table class="tests-table" aria-label="Test procedures and expected results">
+                <thead>
+                    <tr>
+                        <td>Type</td>
+                        <td>Procedure</td>
+                        <td>Expected result</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tool</td>
+                        <td>Use WAVE Toolbar or similar to generate an outline of the html document.</td>
+                        <td>There must be exactly one <code>&lt;h1&gt;</code>. The headings in the page's source order must form an increasing sequence. No heading levels should be skipped after <code>&lt;h1&gt;</code>.</td>
+                    </tr>
+                    <tr>
+                        <td>Manual</td>
+                        <td>Search document source for <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code>.</td>
+                        <td>There must be exactly one instance of <code>&lt;h1&gt;</code>. Each heading should be followed by either by content, or by another heading of one level deeper.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer role="contentinfo">
